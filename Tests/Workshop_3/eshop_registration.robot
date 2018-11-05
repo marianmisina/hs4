@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Library    Collections
 Resource    ../../Keywords/Eshop/Eshop_Keywords.robot
-Resource    ../../Test_Data/Eshop/Registration_Data.robot
+Variables    ../../Resources/Eshop/Registration_Data.py
 Resource    ../../Keywords/Mahara/Mahara_Keywords.txt
 Test Setup    Open Eshop Registration Form    ${email}
 Test Teardown    Capture Screenshot And Close Browser
