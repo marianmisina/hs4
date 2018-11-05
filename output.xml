@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.4 on win32)" generated="20181105 08:22:47.978">
+<suite id="s1" name="Hs4" source="C:\Users\marian\_hackerschool_workspace\hs4">
+<suite id="s1-s1" name="Tests" source="C:\Users\marian\_hackerschool_workspace\hs4\Tests">
+<suite id="s1-s1-s1" name="Workshop 3" source="C:\Users\marian\_hackerschool_workspace\hs4\Tests\Workshop_3">
+<suite id="s1-s1-s1-s1" name="Mahara login ddt" source="C:\Users\marian\_hackerschool_workspace\hs4\Tests\Workshop_3\Mahara_login_ddt.robot">
+<test id="s1-s1-s1-s1-t1" name="MahaMahara Invalid login ddt">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181105 08:22:48.228" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181105 08:22:48.227" endtime="20181105 08:22:55.984"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:48.227" endtime="20181105 08:22:55.987"></status>
+</kw>
+<kw name="Login with invalid 12345 should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:22:55.992" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:22:55.991" endtime="20181105 08:22:56.137"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:22:56.138" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:22:56.137" endtime="20181105 08:22:56.264"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:22:56.265" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:22:56.264" endtime="20181105 08:22:58.130"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:55.989" endtime="20181105 08:22:58.131"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:22:58.132" endtime="20181105 08:22:58.154"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:22:58.181" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:22:58.155" endtime="20181105 08:22:58.181"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:22:58.206" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:22:58.181" endtime="20181105 08:22:58.206"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:55.988" endtime="20181105 08:22:58.207"></status>
+</kw>
+<kw name="Login with invalid 21355 should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:22:58.209" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:22:58.208" endtime="20181105 08:22:58.337"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:22:58.340" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:22:58.338" endtime="20181105 08:22:58.457"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:22:58.458" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:22:58.458" endtime="20181105 08:23:00.177"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:58.208" endtime="20181105 08:23:00.178"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:00.178" endtime="20181105 08:23:00.192"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:00.206" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:00.192" endtime="20181105 08:23:00.206"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:00.219" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:00.207" endtime="20181105 08:23:00.219"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:58.207" endtime="20181105 08:23:00.220"></status>
+</kw>
+<kw name="Login with invalid 64365 should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:00.222" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:00.221" endtime="20181105 08:23:00.341"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:00.342" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:00.341" endtime="20181105 08:23:00.462"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:00.463" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:00.463" endtime="20181105 08:23:02.289"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:00.221" endtime="20181105 08:23:02.289"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:02.289" endtime="20181105 08:23:02.302"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:02.317" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:02.303" endtime="20181105 08:23:02.318"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:02.331" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:02.318" endtime="20181105 08:23:02.331"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:00.220" endtime="20181105 08:23:02.331"></status>
+</kw>
+<kw name="Login with invalid 86465 should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:02.335" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:02.334" endtime="20181105 08:23:02.461"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:02.462" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:02.461" endtime="20181105 08:23:02.597"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:02.599" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:02.598" endtime="20181105 08:23:04.344"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:02.333" endtime="20181105 08:23:04.345"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:04.345" endtime="20181105 08:23:04.357"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:04.371" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:04.358" endtime="20181105 08:23:04.371"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:04.387" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:04.372" endtime="20181105 08:23:04.387"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:02.332" endtime="20181105 08:23:04.388"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181105 08:23:04.747" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181105 08:23:04.391" endtime="20181105 08:23:04.747"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181105 08:23:04.748" endtime="20181105 08:23:06.982"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:04.389" endtime="20181105 08:23:06.984"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:22:48.226" endtime="20181105 08:23:06.985" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="MahaMahara Invalid login list">
+<kw name="Open Browser To Mahara" library="Mahara_Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://demo.mahara.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20181105 08:23:06.993" level="INFO">Opening browser 'chrome' to base url 'https://demo.mahara.org/'.</msg>
+<status status="PASS" starttime="20181105 08:23:06.992" endtime="20181105 08:23:14.886"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:06.990" endtime="20181105 08:23:14.887"></status>
+</kw>
+<kw name="${password} IN [ @{PWDS} ]" type="for">
+<kw name="${password} = 12345" type="foritem">
+<kw name="Login with invalid ${password} should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:14.892" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:14.891" endtime="20181105 08:23:15.053"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:15.055" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:15.054" endtime="20181105 08:23:15.213"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:15.215" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:15.214" endtime="20181105 08:23:17.135"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:14.891" endtime="20181105 08:23:17.136"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:17.137" endtime="20181105 08:23:17.163"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:17.190" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:17.164" endtime="20181105 08:23:17.191"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:17.211" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:17.191" endtime="20181105 08:23:17.212"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:14.890" endtime="20181105 08:23:17.212"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:14.890" endtime="20181105 08:23:17.212"></status>
+</kw>
+<kw name="${password} = 21355" type="foritem">
+<kw name="Login with invalid ${password} should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:17.215" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:17.214" endtime="20181105 08:23:17.328"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:17.329" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:17.328" endtime="20181105 08:23:17.441"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:17.442" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:17.441" endtime="20181105 08:23:18.608"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:17.213" endtime="20181105 08:23:18.611"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:18.614" endtime="20181105 08:23:18.639"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:18.655" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:18.640" endtime="20181105 08:23:18.655"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:18.668" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:18.656" endtime="20181105 08:23:18.668"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:17.213" endtime="20181105 08:23:18.669"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:17.213" endtime="20181105 08:23:18.669"></status>
+</kw>
+<kw name="${password} = 64365" type="foritem">
+<kw name="Login with invalid ${password} should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:18.671" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:18.671" endtime="20181105 08:23:18.780"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:18.782" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:18.781" endtime="20181105 08:23:18.890"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:18.891" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:18.890" endtime="20181105 08:23:20.107"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:18.670" endtime="20181105 08:23:20.109"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:20.112" endtime="20181105 08:23:20.139"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:20.156" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:20.140" endtime="20181105 08:23:20.157"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:20.172" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:20.157" endtime="20181105 08:23:20.173"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:18.670" endtime="20181105 08:23:20.173"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:18.669" endtime="20181105 08:23:20.174"></status>
+</kw>
+<kw name="${password} = 86465" type="foritem">
+<kw name="Login with invalid ${password} should fail">
+<kw name="Login To Mahara" library="Mahara_Keywords">
+<arguments>
+<arg>Admin</arg>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=login_login_username</arg>
+<arg>${uname}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:20.177" level="INFO">Typing text 'Admin' into text field 'id=login_login_username'.</msg>
+<status status="PASS" starttime="20181105 08:23:20.176" endtime="20181105 08:23:20.303"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=login_password</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20181105 08:23:20.304" level="INFO">Typing password into text field 'name=login_password'.</msg>
+<status status="PASS" starttime="20181105 08:23:20.304" endtime="20181105 08:23:20.410"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<msg timestamp="20181105 08:23:20.411" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20181105 08:23:20.411" endtime="20181105 08:23:21.561"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:20.175" endtime="20181105 08:23:21.562"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id=messages</arg>
+</arguments>
+<status status="PASS" starttime="20181105 08:23:21.563" endtime="20181105 08:23:21.585"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>You have not provided the correct credentials to log in. Please check your username and password are correct.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:21.606" level="INFO">Current page contains text 'You have not provided the correct credentials to log in. Please check your username and password are correct.'.</msg>
+<status status="PASS" starttime="20181105 08:23:21.585" endtime="20181105 08:23:21.606"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>There was an error with submitting this form. Please check the marked fields and try again.</arg>
+</arguments>
+<msg timestamp="20181105 08:23:21.626" level="INFO">Current page contains text 'There was an error with submitting this form. Please check the marked fields and try again.'.</msg>
+<status status="PASS" starttime="20181105 08:23:21.607" endtime="20181105 08:23:21.626"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:20.175" endtime="20181105 08:23:21.627"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:20.174" endtime="20181105 08:23:21.627"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:14.888" endtime="20181105 08:23:21.627"></status>
+</kw>
+<kw name="Capture Screenshot And Close Browser" library="Mahara_Keywords" type="teardown">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181105 08:23:21.968" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181105 08:23:21.628" endtime="20181105 08:23:21.968"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181105 08:23:21.969" endtime="20181105 08:23:24.191"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:21.628" endtime="20181105 08:23:24.193"></status>
+</kw>
+<status status="PASS" starttime="20181105 08:23:06.987" endtime="20181105 08:23:24.194" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20181105 08:22:48.061" endtime="20181105 08:23:24.197"></status>
+</suite>
+<status status="PASS" starttime="20181105 08:22:48.058" endtime="20181105 08:23:24.207"></status>
+</suite>
+<status status="PASS" starttime="20181105 08:22:48.056" endtime="20181105 08:23:24.217"></status>
+</suite>
+<status status="PASS" starttime="20181105 08:22:48.027" endtime="20181105 08:23:24.224"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Hs4">Hs4</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Tests">Hs4.Tests</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="Workshop 3">Hs4.Tests.Workshop 3</stat>
+<stat pass="2" fail="0" id="s1-s1-s1-s1" name="Mahara login ddt">Hs4.Tests.Workshop 3.Mahara login ddt</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20181105 08:22:48.224" level="ERROR">Error in file 'C:\Users\marian\_hackerschool_workspace\hs4\Tests\Workshop_3\Mahara_login_ddt.robot': Resource file 'Test_data.robot' does not exist.</msg>
+</errors>
+</robot>
